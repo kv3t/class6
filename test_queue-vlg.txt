@@ -1,0 +1,26 @@
+==1005065== Memcheck, a memory error detector
+==1005065== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1005065== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1005065== Command: ./test_queue
+==1005065== 
+1 2 3 
+3
+2 3 4 5 
+4
+2 3 6 
+3
+3 4 5 7 8 
+5
+2 3 6 
+3
+3 4 5 9 
+4
+==1005065== 
+==1005065== HEAP SUMMARY:
+==1005065==     in use at exit: 0 bytes in 0 blocks
+==1005065==   total heap usage: 18 allocs, 18 frees, 77,056 bytes allocated
+==1005065== 
+==1005065== All heap blocks were freed -- no leaks are possible
+==1005065== 
+==1005065== For lists of detected and suppressed errors, rerun with: -s
+==1005065== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
